@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <!-- Contenedor del título -->
+  <div class="title-container">
+    <h1 class="title">Management Timer</h1>
+  </div>
+
+  <!-- Contenedor de la tarjeta de bienvenida -->
+
+    <ion-card  class="welcome-card">
+      <ion-card-content>
+        <div class="avatar-container">
+          <img src="https://robohash.org/98cf3d07b02b1b5eea02e319621e7cfa?set=set4&bgset=&size=400x400" alt="Avatar" class="avatar-img">
+        </div>
+        <h2 class="welcome-text">Bienvenido Anderson</h2>
+      </ion-card-content>
+    </ion-card>
+
+
+  <!-- Botones de acción -->
+  <div class="action-buttons">
+    <ion-button expand="block" class="task-button" routerLink="/task">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <span>Crear nueva tarea</span>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+    </ion-button>
+
+    <ion-button expand="block" class="task-button">
+      <ion-icon name="folder-outline"></ion-icon>
+      <span>Ver mis tareas</span>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+    </ion-button>
+
+    <ion-button expand="block" class="task-button">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <span>Gestionar Notificaciones</span>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+    </ion-button>
+  </div>
+</ion-content>

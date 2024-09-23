@@ -1,0 +1,100 @@
+ion-content {
+  --background: var(--ColorPrincipal, #B9D6D8);
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.welcome-card {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  position: absolute;
+  top: 172px;                 
+  left: 47%;                  
+  transform: translateX(-50%);
+  width: 289px;
+  height: 178px;
+  flex-shrink: 0;
+  border-radius: 26px;
+  --background: var(--ColorPrincipal, #92BFC1);
+  overflow: hidden;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; 
+  letter-spacing: 0.201px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;   
+  align-items: center;    
+  position: absolute;
+  top: calc(50% + 30px);   
+  left: 50%;
+  transform: translateX(-50%); 
+}.task-button {
+  --border-radius: 9px;
+  --background: var(--ColorPrincipal, #56A3A6);
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido entre el icono y la flecha */
+  align-items: center;
+  width: 313px;
+  height: 67px;
+  flex-shrink: 0;
+}
+
+.task-button ion-icon:first-child {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.task-button ion-icon:last-child {
+  font-size: 20px;
+}
+
+.task-button span {
+  flex-grow: 1;
+  text-align: left;
+}

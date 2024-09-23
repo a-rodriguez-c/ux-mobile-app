@@ -1,0 +1,37 @@
+ion-content {
+  --background: var(--ColorFondo, #FFFFFF);
+}
+
+ion-toolbar {
+  --background: var(--ColorPrincipal, #56A3A6);
+}
+
+.custom-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 363px;
+  height: 69px;
+  padding: 8px 4px;
+  gap: 6px;
+  flex-shrink: 0;
+  background: var(--ColorPrincipal, #56a3a6);
+  margin: 0 auto;
+}
+
+ion-title.center-title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: var(--Title-Large-Size, 22px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Title-Large-Line-Height, 28px);
+  letter-spacing: var(--Title-Large-Tracking, 0px);
+}
+.custom-form-field {
+  display: flex;
+  width: 289px;
+  flex-direction: column;
+  align-items: flex-start;
+}

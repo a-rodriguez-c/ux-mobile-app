@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="center-title">Crear tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<p class="custom-form-field">
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput>
+    <mat-hint>Ponle un nombre a tu tarea</mat-hint>
+  </mat-form-field>
+</p>
+
+
+
+  <!-- Temporizador -->
+  <div class="timer-container">
+    <ion-item lines="none">
+      <ion-label>Enter time</ion-label>
+    </ion-item>
+    <div class="time-inputs">
+      <ion-input type="number" placeholder="25" min="0" max="60"></ion-input>
+      <span>:</span>
+      <ion-input type="number" placeholder="00" min="0" max="60"></ion-input>
+    </div>
+    <div class="timer-buttons">
+      <ion-button color="light" expand="block">Cancelar</ion-button>
+      <ion-button color="primary" expand="block">OK</ion-button>
+    </div>
+  </div>
+
+  <!-- Campo Descripción -->
+  <ion-item>
+    <ion-label position="floating">Descripción</ion-label>
+    <ion-input placeholder="Supporting text" clear-input></ion-input>
+  </ion-item>
+
+  <!-- Campo Fecha -->
+  <ion-item>
+    <ion-label position="floating">Fecha</ion-label>
+    <ion-datetime display-format="MM/DD/YYYY" placeholder="MM/DD/YYYY"></ion-datetime>
+  </ion-item>
+
+  <!-- Campo Prioridad -->
+  <ion-item>
+    <ion-label>Prioridad</ion-label>
+    <ion-select placeholder="Selecciona la prioridad">
+      <ion-select-option value="alta">Alta</ion-select-option>
+      <ion-select-option value="media">Media</ion-select-option>
+      <ion-select-option value="baja">Baja</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <!-- Botones Guardar y Cancelar -->
+  <div class="form-buttons">
+    <ion-button expand="block" color="primary">Guardar</ion-button>
+    <ion-button expand="block" color="light">Cancelar</ion-button>
+  </div>
+
+</ion-content>

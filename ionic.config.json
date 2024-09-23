@@ -1,0 +1,7 @@
+{
+  "name": "MTimer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
