@@ -21,17 +21,301 @@ ion-toolbar {
 
 ion-title.center-title {
   color: #FFF;
-  text-align: center;
-  font-family: "Open Sans";
+  font-family: var(--Title-Large-Font, Roboto);
   font-size: var(--Title-Large-Size, 22px);
   font-style: normal;
   font-weight: 400;
   line-height: var(--Title-Large-Line-Height, 28px);
   letter-spacing: var(--Title-Large-Tracking, 0px);
 }
+
+/* Contenedor del campo de formulario */
 .custom-form-field {
-  display: flex;
+  position: relative;
+  margin: 20px 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Estilos del input */
+.form-input {
+  color: #56a3a6;
+  padding: 10px 10px 10px 5px;
+  border: 1px solid #56a3a6;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  transition: border-color 0.3s ease;
+  height: 56px;
   width: 289px;
+  margin-left: 15px;
+}
+
+/* Cuando el input está enfocado */
+.form-input:focus {
+  border-color: #56a3a6;
+}
+
+/* Estilos de la etiqueta (label) */
+.form-label {
+  position: absolute;
+  top: 30%;  
+  left: 5px; /* Espacio a la izquierda del input */
+  transform: translateY(-50%); 
+  color: #56a3a6;
+  background-color: white;
+  padding: 0 5px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+/* Cuando el input está enfocado o contiene texto */
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  top: -1px;
+  left: 10px;
+  font-size: 12px;
+  color: #56a3a6;
+}
+
+/* Estilos del hint */
+.form-hint {
+  font-size: 12px;
+  color: #56a3a6;
+  margin-top: 2px;
+  margin-left: 30px;
+  display: block;
+}
+
+
+
+/* Estilos de la tarjeta (card) */
+.card {
+  width: 289px;
+  height: 208px;
+  margin-left: 15px;
+  background-color: #56a3a6;
+  border-radius: 28px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Título */
+.title {
+  color: #FFF;
+  font-family: var(--Label-Medium-Font, Roboto);
+  font-size: var(--Label-Medium-Size, 12px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--Label-Medium-Line-Height, 16px);
+  letter-spacing: var(--Label-Medium-Tracking, 0.5px);
+  text-align: left;
+  display: block;
+  width: 100%; 
+  margin-bottom: 3px;
+  padding-left: 3px;
+}
+
+/* Contenedor de los inputs de tiempo */
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input de tiempo y su wrapper */
+.input-wrapper {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 109px;
+  height: 95px;
+}
+
+.time-input {
+  width: 108.5px;
+  height: 72px;
+  font-size: 24px;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  color: #3b8385;
+  background-color: #FFFFFF;
+  outline: none;
+
+  color: var(--ColorPrincipal, #56A3A6);
+  text-align: center;
+  font-family: var(--Display-Medium-Font, Roboto);
+  font-size: var(--Display-Medium-Size, 45px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Display-Medium-Line-Height, 52px);
+  letter-spacing: var(--Display-Medium-Tracking, 0px);
+}
+
+.time-input:focus {
+  border-radius: var(--Radius-200, 8px);
+  border: 2px solid #084C61;
+  caret-color:#084C61;
+}
+
+.colon-wrapper {
+  display: flex;
+  width: var(--Icon-Small, 24px);
+  height: 72px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colon {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+/* Etiquetas bajo los inputs */
+.input-wrapper span {
+  color: #FFF;
+  margin-top: 5px;
+  font-family: var(--Body-Small-Font, Roboto);
+  font-size: var(--Body-Small-Size, 12px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--Body-Small-Line-Height, 16px); 
+  letter-spacing: var(--Body-Small-Tracking, 0.4px);
+  align-self: start;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cancel-button, .ok-button {
+  width: 105px;
+  height: 40px;
+  background-color: white;
+  color: #56a3a6;
+  border: 2px solid #56a3a6; 
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.cancel-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.ok-button {
+  background-color: transparent;
+  color: white;
+}
+
+.cancel-button:hover, .ok-button:hover {
+  opacity: 0.8;
+}
+
+
+/* Contenedor del select */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 283px;
+  margin-left: 15px;
+}
+
+/* Estilo de la etiqueta */
+.select-label {
+  font-size: 14px;
+  color: #56a3a6;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del select */
+.custom-select select {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-size: 14px;
+  color: #56a3a6;
+  appearance: none; 
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%2356a3a6" d="M7 10l5 5 5-5z"/></svg>'); /* Flecha personalizada */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo del select cuando está enfocado */
+.custom-select select:focus {
+  border-color: #56a3a6;
+}
+
+
+/* Contenedor para los botones */
+.button-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Estilos del botón de "Guardar" */
+.save-button {
+  background-color: #56a3a6; 
+  color: white; 
+  border: none;
+  border-radius: 25px; 
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #3b8385; 
+}
+
+/* Estilos del botón de "Cancelar" */
+.cancelar-button {
+  background-color: transparent;
+  color: #56a3a6;
+  border: 3px solid #56a3a6;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 450;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancelar-button:hover {
+  background-color: #56a3a6; 
+  color: white; 
 }

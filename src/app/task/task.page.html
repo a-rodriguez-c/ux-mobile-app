@@ -9,58 +9,64 @@
 
 <ion-content class="ion-padding">
 
-<p class="custom-form-field">
-  <mat-form-field appearance="outline">
-    <mat-label>Nombre</mat-label>
-    <input matInput>
-    <mat-hint>Ponle un nombre a tu tarea</mat-hint>
-  </mat-form-field>
-</p>
+  <div class="custom-form-field">
+    <input type="text" id="taskName" class="form-input" placeholder=" ">
+    <label for="taskName" class="form-label">Nombre</label>
+    <span class="form-hint">Ponle un nombre a tu tarea</span>
+  </div>
 
-
-
-  <!-- Temporizador -->
-  <div class="timer-container">
-    <ion-item lines="none">
-      <ion-label>Enter time</ion-label>
-    </ion-item>
+  <div class="card">
+    <span class="title">Enter time</span>
     <div class="time-inputs">
-      <ion-input type="number" placeholder="25" min="0" max="60"></ion-input>
-      <span>:</span>
-      <ion-input type="number" placeholder="00" min="0" max="60"></ion-input>
+      <div class="input-wrapper">
+        <input type="number" class="time-input" value="25" min="0" max="60">
+        <span>Minutos</span>
+      </div>
+      <div class="colon-wrapper">
+        <span class="colon">:</span>
+      </div>
+      <div class="input-wrapper">
+        <input type="number" class="time-input" value="00" min="0" max="60">
+        <span>Segundos</span>
+      </div>
     </div>
-    <div class="timer-buttons">
-      <ion-button color="light" expand="block">Cancelar</ion-button>
-      <ion-button color="primary" expand="block">OK</ion-button>
+  
+    <div class="buttons">
+      <button class="cancel-button">Cancelar</button>
+      <button class="ok-button">OK</button>
+    </div>
+
+  </div>
+  
+  
+  <div class="custom-form-field">
+    <input type="text" id="taskName" class="form-input" placeholder=" ">
+    <label for="taskName" class="form-label">Descripción</label>
+    <span class="form-hint">Escribe la descripción de tu tarea</span>
+  </div>
+
+  <div class="custom-form-field">
+    <input type="text" id="taskName" class="form-input" placeholder=" ">
+    <label for="taskName" class="form-label">Fecha</label>
+    <span class="form-hint">MM-DD-YYYY</span>
+  </div>
+
+  <div class="select-container">
+    <label for="priority-select" class="select-label">Prioridad</label>
+    <div class="custom-select">
+      <select id="priority-select">
+        <option value="" disabled selected>Selecciona la prioridad</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
     </div>
   </div>
 
-  <!-- Campo Descripción -->
-  <ion-item>
-    <ion-label position="floating">Descripción</ion-label>
-    <ion-input placeholder="Supporting text" clear-input></ion-input>
-  </ion-item>
-
-  <!-- Campo Fecha -->
-  <ion-item>
-    <ion-label position="floating">Fecha</ion-label>
-    <ion-datetime display-format="MM/DD/YYYY" placeholder="MM/DD/YYYY"></ion-datetime>
-  </ion-item>
-
-  <!-- Campo Prioridad -->
-  <ion-item>
-    <ion-label>Prioridad</ion-label>
-    <ion-select placeholder="Selecciona la prioridad">
-      <ion-select-option value="alta">Alta</ion-select-option>
-      <ion-select-option value="media">Media</ion-select-option>
-      <ion-select-option value="baja">Baja</ion-select-option>
-    </ion-select>
-  </ion-item>
-
-  <!-- Botones Guardar y Cancelar -->
-  <div class="form-buttons">
-    <ion-button expand="block" color="primary">Guardar</ion-button>
-    <ion-button expand="block" color="light">Cancelar</ion-button>
+  <div class="button-container">
+    <button class="save-button" routerLink="/home">Guardar</button>
+    <button class="cancelar-button" routerLink="/home">Cancelar</button>
   </div>
-
+  
+  
 </ion-content>

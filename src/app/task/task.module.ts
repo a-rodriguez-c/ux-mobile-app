@@ -7,6 +7,7 @@ import { TaskPage } from './task.page';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 import { TaskPageRoutingModule } from './task-routing.module';
 
@@ -19,7 +20,8 @@ import { TaskPageRoutingModule } from './task-routing.module';
     TaskPageRoutingModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   declarations: [TaskPage]
 })
