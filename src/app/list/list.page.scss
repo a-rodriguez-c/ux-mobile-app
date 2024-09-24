@@ -1,0 +1,241 @@
+ion-content {
+  --background: var(--ColorFondo, #FFFFFF);
+}
+
+ion-toolbar {
+  --background: var(--ColorPrincipal, #56A3A6);
+}
+
+.custom-toolbar {
+  display: flex;
+  justify-content: center;
+  width: 363px;
+  height: 69px;
+  padding: 8px 4px;
+  gap: 6px;
+  flex-shrink: 0;
+  background: var(--ColorPrincipal, #56a3a6);
+  margin: 0 auto;
+}
+
+.center-title {
+  color: #FFF;
+  font-family: var(--Title-Large-Font, Roboto);
+  font-size: var(--Title-Large-Size, 22px);
+  font-style: normal;
+  font-weight: 350;
+  line-height: var(--Title-Large-Line-Height, 28px);
+  letter-spacing: var(--Title-Large-Tracking, 0px);
+  margin-left: 40px;
+}
+
+/* Estilo del contenedor del texto */
+.task-status {
+  font-family: Open Sans;
+  color: #56a3a6;
+  font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Estilo del título de tareas */
+.task-title {
+  font-weight: bold;
+}
+
+/* Estilo para el conteo de tareas */
+.task-count {
+  font-weight: lighter;
+  margin-left: 5px; 
+}
+
+
+.progress-container {
+  margin-left: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #56a3a6;
+  font-size: 16px;
+}
+
+.progress-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  background-color: #56a3a6;
+  border-radius: 4px;
+  position: absolute;
+}
+
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #56a3a6;
+  font-size: 16px;
+}
+
+.toggle-label {
+  margin-bottom: 7px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-slider {
+  width: 50px;
+  height: 28px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 2px solid #56A3A6;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #56a3a6;
+  border-radius: 50%;
+  top: 2px;
+  left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #56a3a6;
+}
+
+.toggle-input:checked + .toggle-slider::before {
+  background-color: #FFFFFF;
+  transform: translateX(20px);
+}
+
+/* Contenedor del select */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 283px;
+  margin-left: 20px;
+}
+
+/* Estilo de la etiqueta */
+.select-label {
+  font-size: 16px;
+  color: #56a3a6;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del select */
+.custom-select select {
+  width: 100%;
+  height: 51px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  font-size: 16px;
+  font-weight: 360;
+  color: #56a3a6;
+  appearance: none; 
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%2356a3a6" d="M7 10l5 5 5-5z"/></svg>'); /* Flecha personalizada */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo del select cuando está enfocado */
+.custom-select select:focus {
+  border-color: #56a3a6;
+}
+
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 15px;
+  margin: 0px, 0px, 0px, 0px;
+}
+
+.card {
+  background-color: #56a3a6;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card-info {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  height: 25px;
+}
+
+.card-description {
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+}
+
+.card-options {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}

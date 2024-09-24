@@ -19,14 +19,15 @@ ion-toolbar {
   margin: 0 auto;
 }
 
-ion-title.center-title {
+.center-title {
   color: #FFF;
   font-family: var(--Title-Large-Font, Roboto);
   font-size: var(--Title-Large-Size, 22px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 350;
   line-height: var(--Title-Large-Line-Height, 28px);
   letter-spacing: var(--Title-Large-Tracking, 0px);
+  margin-left: 40px;
 }
 
 /* Contenedor del campo de formulario */

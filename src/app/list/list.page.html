@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="center-title">Mis tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="task-status">
+    <span class="task-title">Tareas del día:</span>
+    <span class="task-count">2/4</span>
+  </p>
+  
+  <div class="progress-container">
+    <span class="progress-label">Progreso:</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <div class="toggle-container">
+    <div class="toggle-group">
+      <label for="pending" class="toggle-label">Pendientes</label>
+      <input type="checkbox" id="pending" class="toggle-input">
+      <span class="toggle-slider"></span>
+    </div>
+    
+    <div class="toggle-group">
+      <label for="completed" class="toggle-label">Completadas</label>
+      <input type="checkbox" id="completed" class="toggle-input">
+      <span class="toggle-slider"></span>
+    </div>
+  </div>
+  
+  <div class="select-container">
+    <label for="priority-select" class="select-label">Prioridad</label>
+    <div class="custom-select">
+      <select id="priority-select">
+        <option value="" disabled selected>Selecciona la prioridad</option>
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card-list">
+    <div class="card">
+      <div class="card-content">
+        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
+        <div class="card-info">
+          <h3 class="card-title">Reporte mensual</h3>
+          <p class="card-description">Actualizar el reporte mensual de ventas y enviarlo al equipo.</p>
+        </div>
+        <div class="card-options">⋮</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-content">
+        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
+        <div class="card-info">
+          <h3 class="card-title">Métricas</h3>
+          <p class="card-description">Revisar las métricas del sitio web y analizar los resultados.</p>
+        </div>
+        <div class="card-options">⋮</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-content">
+        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
+        <div class="card-info">
+          <h3 class="card-title">Presentación</h3>
+          <p class="card-description">Preparar la presentación para la reunión con el cliente.</p>
+        </div>
+        <div class="card-options">⋮</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-content">
+        <img src="https://via.placeholder.com/50" alt="Icon" class="card-icon">
+        <div class="card-info">
+          <h3 class="card-title">Informe de rendimiento</h3>
+          <p class="card-description">Finalizar el informe de rendimiento trimestral para la junta directiva.</p>
+        </div>
+        <div class="card-options">⋮</div>
+      </div>
+    </div>
+  </div>
+  
+  
+</ion-content>
