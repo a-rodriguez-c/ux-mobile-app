@@ -6,7 +6,7 @@
 
   <!-- Contenedor de la tarjeta de bienvenida -->
 
-    <ion-card  class="welcome-card">
+    <ion-card  class="welcome-card" routerLink="/alarm">
       <ion-card-content>
         <div class="avatar-container">
           <img src="https://robohash.org/98cf3d07b02b1b5eea02e319621e7cfa?set=set4&bgset=&size=400x400" alt="Avatar" class="avatar-img">
@@ -21,19 +21,19 @@
     <ion-button expand="block" class="task-button" routerLink="/task">
       <ion-icon name="add-circle-outline"></ion-icon>
       <span>Crear nueva tarea</span>
-      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> 
     </ion-button>
 
     <ion-button expand="block" class="task-button" routerLink="/list">
       <ion-icon name="folder-outline"></ion-icon>
       <span>Ver mis tareas</span>
-      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> 
     </ion-button>
 
-    <ion-button expand="block" class="task-button">
+    <ion-button expand="block" class="task-button"  routerLink="/notif">
       <ion-icon name="notifications-outline"></ion-icon>
       <span>Gestionar Notificaciones</span>
-      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> <!-- Flecha al final -->
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> 
     </ion-button>
   </div>
 </ion-content>
