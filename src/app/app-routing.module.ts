@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./alarm/alarm.module').then( m => m.AlarmPageModule)
   },
   {
+    path: 'detail',
+    loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
+  },
+  {
     path: 'list',
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },

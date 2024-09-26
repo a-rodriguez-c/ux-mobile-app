@@ -1,0 +1,275 @@
+ion-content {
+  --background: var(--ColorFondo, #FFFFFF);
+}
+
+ion-toolbar {
+  --background: var(--ColorPrincipal, #56A3A6);
+}
+
+.custom-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 69px;
+  padding: 8px 4px;
+  gap: 6px;
+  flex-shrink: 0;
+  background: var(--ColorPrincipal, #56a3a6);
+  margin: 0 auto;
+}
+
+.center-title {
+  color: #FFF;
+  font-family: var(--Title-Large-Font, Roboto);
+  font-size: var(--Title-Large-Size, 22px);
+  font-style: normal;
+  font-weight: 350;
+  line-height: var(--Title-Large-Line-Height, 28px);
+  letter-spacing: var(--Title-Large-Tracking, 0px);
+  margin-left: 40px;
+}
+
+.task-title {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 253.016px;
+  height: 83px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: var(--ColorPrincipal, #56A3A6);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 0.201px;
+}
+
+
+
+/* Estilos de la tarjeta (card) */
+.card {
+  width: 289px;
+  height: 120px;
+  margin-left: 15px;
+  border-radius: 28px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* Contenedor de los inputs de tiempo */
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input de tiempo y su wrapper */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 109px;
+  height: 95px;
+}
+
+.time-input {
+  width: 108.5px;
+  height: 72px;
+  font-size: 24px;
+  border: 2px solid #56A3A6;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #56A3A6;
+  outline: none;
+
+  color: var(--ColorPrincipal, #FFFFFF);
+  text-align: center;
+  font-family: var(--Display-Medium-Font, Roboto);
+  font-size: var(--Display-Medium-Size, 45px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Display-Medium-Line-Height, 52px);
+  letter-spacing: var(--Display-Medium-Tracking, 0px);
+}
+
+.time-input:focus {
+  border-radius: var(--Radius-200, 8px);
+  border: 2px solid #FFFFFF;
+  caret-color:#FFFFFF;
+}
+
+.colon-wrapper {
+  display: flex;
+  width: var(--Icon-Small, 24px);
+  height: 72px;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.colon {
+  color: #56A3A6;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+/* Etiquetas bajo los inputs */
+.input-wrapper span {
+  color: #56A3A6;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-family: var(--Body-Small-Font, Roboto);
+  font-size: var(--Body-Small-Size, 12px);
+  font-style: bold;
+  
+  line-height: var(--Body-Small-Line-Height, 16px); 
+  letter-spacing: var(--Body-Small-Tracking, 0.4px);
+  align-self: start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+/* Estilos comunes para los botones redondos */
+.round-button {
+  width: 60px;
+  height: 40px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Botón Play */
+.play-button {
+  background-color: #56a3a6;
+  color: white;
+}
+
+.play-button:hover {
+  background-color: #3b8385;
+}
+
+/* Botón Pause */
+.pause-button {
+  border: 2px solid #56a3a6;
+  color: #56a3a6;
+}
+
+.pause-button:hover {
+  background-color: #e0f0f1;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  border-radius: 25px;
+  border: 2px solid #e57373; 
+  background-color: transparent;
+  color: #e57373;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #fbe2e2; 
+}
+
+
+.task-container {
+  margin-top: 60px;
+  margin-left: 38px;
+  width: 250px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #b0c4c7;
+  margin: 10px 0;
+}
+
+.task-item {
+  font-size: 16px;
+  color: #56a3a6;
+  margin: 5px 0;
+}
+
+.task-item:first-child {
+  margin-top: 0;
+}
+
+
+
+/* Contenedor para los botones */
+.button-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Estilos del botón de "Guardar" */
+.save-button {
+  background-color: #56a3a6; 
+  color: white; 
+  border: none;
+  border-radius: 25px; 
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #3b8385; 
+}
+
+/* Estilos del botón de "Cancelar" */
+.cancelar-button {
+  background-color: transparent;
+  color: #56a3a6;
+  border: 3px solid #56a3a6;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 450;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancelar-button:hover {
+  background-color: #56a3a6; 
+  color: white; 
+}
+
+
