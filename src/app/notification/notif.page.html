@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="center-title">Notificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="toggle-card">
+    <span class="toggle-label">Activadas</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <hr class="custom-line">
+
+  <div class="parent-card">
+
+    <div class="pomodoro-container">
+      <span class="label">Bloque pomodoro</span>
+      <input type="number" class="pomodoro-input" value="25" min="1" max="60">
+      <span class="label-time">Minutos</span>
+    </div>
+    
+    <div class="title-notif">
+      <span class="label">Notificaciones:</span>
+    </div>
+
+    <div class="child-toggle-card">
+      <span class="child-toggle-label">Inactividad</span>
+      <label class="child-switch">
+        <input type="checkbox" checked>
+        <span class="child-slider child-round"></span>
+      </label>
+    </div>
+    <hr class="child-custom-line">
+
+    <div class="child-toggle-card">
+      <span class="child-toggle-label">Tareas vencidas</span>
+      <label class="child-switch">
+        <input type="checkbox" checked>
+        <span class="child-slider child-round"></span>
+      </label>
+    </div>
+    <hr class="child-custom-line">
+
+    <div class="child-toggle-card">
+      <span class="child-toggle-label">4 bloques completos</span>
+      <label class="child-switch">
+        <input type="checkbox" checked>
+        <span class="child-slider child-round"></span>
+      </label>
+    </div>
+    <hr class="child-custom-line">
+
+    <div class="child-toggle-card">
+      <span class="child-toggle-label">Sonar</span>
+      <label class="child-switch">
+        <input type="checkbox" checked>
+        <span class="child-slider child-round"></span>
+      </label>
+    </div>
+    <hr class="child-custom-line">
+
+    <div class="child-toggle-card">
+      <span class="child-toggle-label">Vibrar</span>
+      <label class="child-switch">
+        <input type="checkbox" checked>
+        <span class="child-slider child-round"></span>
+      </label>
+    </div>
+    <hr class="child-custom-line">
+
+  </div>
+
+  <div class="button-container">
+    <button class="save-button" routerLink="/home">Guardar</button>
+    <button class="cancelar-button" routerLink="/home">Cancelar</button>
+  </div>
+  
+  
+</ion-content>

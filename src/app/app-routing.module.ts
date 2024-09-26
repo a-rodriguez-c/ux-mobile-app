@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
   },
   {
+    path: 'notif',
+    loadChildren: () => import('./notification/notif.module').then( m => m.NotifPageModule)
+  },
+  {
     path: 'list',
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
